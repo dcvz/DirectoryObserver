@@ -18,3 +18,6 @@ self.directoryWatcher = DCDirectoryWatcher.watchDirectory(documentPath, completi
 ```
 
 You may use ```stopWatching()``` or ```startWatching()``` to stop/start/resume 
+
+===========
+```DCDirectoryWatcher``` is a Swift port of ```MHWDirectoryWatcher```
