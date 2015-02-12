@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dchavezlive/DCDirectoryWatcher.svg)](https://travis-ci.org/dchavezlive/DCDirectoryWatcher)
+
 # DCDirectoryWatcher
 ```DCDirectoryWatcher``` is a lightweight class the uses GCD to monitor directory changes. Once changes occur ```DCDirectoryWatcher``` will post a notification only after the changes have been completed.
 
