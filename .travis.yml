@@ -1,3 +1,4 @@
 language: objective-c
 xcode_project: DCDirectoryWatcherExample/DCDirectoryWatcherExample.xcodeproj
 xcode_scheme: DCDirectoryWatcherExample
+xcode_sdk: iphonesimulator8.1
