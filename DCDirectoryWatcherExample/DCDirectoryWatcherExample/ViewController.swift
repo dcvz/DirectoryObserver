@@ -14,9 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let directoryWatcher = DCDirectoryWatcher.watchDirectory(NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String, completionClosure: {
+        let directory = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
+        let directoryWatcher = DCDirectoryWatcher.watchDirectory(directory, completionClosure: {
             println("Directory changed!")
         })
+        println("Watching '\(directory)'.")
     }
 
     override func didReceiveMemoryWarning() {
