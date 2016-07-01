@@ -215,9 +215,13 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = B82TF96752;
+						DevelopmentTeamName = "David Chavez";
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = B82TF96752;
+						DevelopmentTeamName = "David Chavez";
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
