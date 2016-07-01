@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  DCDirectoryWatcherExample
+//  DirectoryObserver
 //
-//  Created by David Chavez on 2/11/15.
-//  Copyright (c) 2015 David Chavez. All rights reserved.
+//  Created by David Chavez on 07/01/2016.
+//  Copyright (c) 2016 David Chavez. All rights reserved.
 //
 
 import UIKit

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DCDirectoryWatcherExample.xcodeproj">
+      location = "self:DirectoryObserver.xcodeproj">
    </FileRef>
 </Workspace>
