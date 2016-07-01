@@ -18,7 +18,7 @@ public class DirectoryObserver {
     // MARK: - Errors
 
     public enum Error: ErrorType {
-        case AlreadyObserving, FailedToStartObserver, FailedToStopObserver
+        case AlreadyObserving, FailedToStartObserver, InvalidPath
     }
 
     // MARK: - Attributes
@@ -52,6 +52,10 @@ public class DirectoryObserver {
     public func startObserving() throws {
         if source != nil {
             throw Error.AlreadyObserving
+        }
+
+        guard let path = watchedPath.path else {
+            throw Error.InvalidPath
         }
 
         // Open an event-only file descriptor associated with the directory
@@ -93,9 +97,9 @@ public class DirectoryObserver {
 
     /// Stops the observer
     public func stopObserving() throws {
-        if let source = source {
-            dispatch_source_cancel(source)
-            throw Error.FailedToStopObserver
+        if source != nil {
+            dispatch_source_cancel(source!)
+            source = nil
         }
 
         isObserving = false
