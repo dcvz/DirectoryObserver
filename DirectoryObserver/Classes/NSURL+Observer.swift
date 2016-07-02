@@ -8,10 +8,10 @@
 
 import Foundation
 
-extension NSURL {
+public extension NSURL {
 
     /// Returns `DirectoryObserver` object
-    func setupObserver(callback: () -> Void) -> DirectoryObserver {
+    public func setupObserver(callback: () -> Void) -> DirectoryObserver {
         return DirectoryObserver(pathToWatch: self, callback: callback)
     }
 }
