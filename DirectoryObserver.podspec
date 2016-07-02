@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DirectoryObserver'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A microlibrary for monitoring directory changes'
 
 # This description is used to generate tags and improve search results.
